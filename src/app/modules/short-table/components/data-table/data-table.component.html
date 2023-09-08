@@ -1,0 +1,66 @@
+<table class="table table-bordered" id="table">
+  <thead id="table-head">
+    <tr>
+      <th class="text-center" scope="col">Loc #</th>
+      <th class="text-center" scope="col">Comment</th>
+      <th class="text-center" scope="col">Pass/Fail</th>
+      <th class="text-center" scope="col">850nm</th>
+      <th class="text-center" scope="col">Unit</th>
+      <th class="text-center" scope="col">1310nm</th>
+      <th class="text-center" scope="col">Unit</th>
+      <th class="text-center" scope="col">1490nm</th>
+      <th class="text-center" scope="col">Unit</th>
+      <th class="text-center" scope="col">1550nm</th>
+      <th class="text-center" scope="col">Unit</th>
+    </tr>
+  </thead>
+  <tbody class="content">
+    <tr *ngFor="let name of data.slice(0, 30); let i = index">
+      <td class="first text-center" scope="row">{{i + 1}}</td>
+      <td class="second" id="name">{{name}}</td>
+      <td class="green text-center">PASS</td>
+      <td></td>
+      <td></td>
+      <td class="fifth text-center">{{numbers[i]}}</td>
+      <td class="sixth text-center">dB</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="table table-bordered" id="table2">
+  <thead>
+    <tr>
+      <th>Loc #</th>
+      <th>Comment</th>
+      <th>Pass/Fail</th>
+      <th>850nm</th>
+      <th>Unit</th>
+      <th>1310nm</th>
+      <th>Unit</th>
+      <th>1490nm</th>
+      <th>Unit</th>
+      <th>1550nm</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let name of data.slice(30); let i = index">
+      <td class="first text-center" scope="row">{{i + 31}}</td>
+      <td class="second" id="name2">{{name}}</td>
+      <td class="green text-center">PASS</td>
+      <td></td>
+      <td></td>
+      <td class="fifth text-center">{{numbers[i]}}</td>
+      <td class="sixth text-center">dB</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

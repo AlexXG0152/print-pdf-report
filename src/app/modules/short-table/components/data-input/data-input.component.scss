@@ -1,0 +1,57 @@
+label {
+  margin-right: 10px;
+  font-weight: bolder;
+  padding-left: 15px;
+  margin-right: 0;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #d3d3d3;
+}
+
+.label {
+  text-align: center;
+}
+
+.start {
+  padding-left: 1px;
+}
+
+.op-test {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.last-row {
+  border-style: hidden;
+}
+
+.test-data-name {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.start-text {
+  padding-left: 17px;
+}
+
+.img {
+  padding-left: 130px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.passFail {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#passFail {
+  width: 450px;
+}
+

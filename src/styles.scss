@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@page {
+  size: A4;
+  // margin: 11mm 17mm 17mm 17mm;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    width: 210mm;
+    height: 297mm;
+  }
+
+  #table {
+    border-color: #d3d3d3;
+    border: #d3d3d3 2px;
+  }
+
+  #name {
+    padding-left: 3px;
+  }
+
+  #name2 {
+    padding-left: 3px;
+  }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  div.divFooter {
+    position: fixed;
+    bottom: 0;
+  }
+
+  thead {
+    display: table-row-group;
+  }
+
+  @page :first {
+    size: 210mm 285mm;
+  }
+
+  @page {
+    size: A4 portrait;
+
+    div.divFooter2 {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+
+  tr:nth-child(n + 31) {
+    display: none;
+  }
+
+  #name {
+    width: 225px;
+  }
+
+  #name2 {
+    width: 225px;
+  }
+
+}
+
+@media screen {
+
+  div.divFooter,
+  div.divFooter2 {
+    display: none;
+  }
+}
+
+// @media print {
+//   #picture::before {
+//     content: url("../../../../../assets/pic-1.png");
+//   }
+// }
