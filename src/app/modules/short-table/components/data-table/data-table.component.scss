@@ -1,0 +1,50 @@
+.green {
+  color: #00b050;
+}
+
+table {
+  border-color: #d3d3d3;
+  border: #d3d3d3 2px;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+thead>tr>th {
+  font-weight: bolder;
+  background-color: #d3d3d3;
+}
+
+.table-bordered>:not(caption)>*>* {
+  padding: 0;
+}
+
+.first {
+  width: 50px;
+}
+
+thead>tr {
+  height: 35px;
+  vertical-align: top;
+}
+
+#table2>thead {
+  opacity: 0;
+  border: 0 none;
+  height: 0;
+}
+
+#table2>thead * {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  height: 0px;
+}
+
+// #table {
+//   border-collapse: collapse;
+//   transform: translateY(5px);
+// }
+
+.text-center{
+  font-size: 11px;
+}

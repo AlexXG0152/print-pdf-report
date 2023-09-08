@@ -1,0 +1,12 @@
+<h2>Login</h2>
+
+<div class="form-group">
+  <label for="password">Password:</label>
+  <input type="password" id="password" [(ngModel)]="goodWord" class="form-control">
+</div>
+
+<button (click)="login()" [disabled]="!goodWord" type="button" class="btn btn-outline-secondary">Login</button>
+
+<p *ngIf="showErrorMessage" class="error-message">Incorrect password. Please try again.</p>
+
+<p *ngIf="showSuccessMessage" class="success-message">Login successful!</p>
